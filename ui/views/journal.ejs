@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><title>Журнал</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+  <div class="container">
+    <div style="display:flex; justify-content:space-between;">
+      <h2>Преподаватель: <%= user.name %></h2>
+      <a href="/logout" class="btn btn-danger">Выйти</a>
+    </div>
+
+    <div class="card">
+      <h3>Выставить оценку</h3>
+      <form method="POST" action="/journal/add" style="display:flex; gap:10px;">
+        <select name="studentId" required style="flex:1;">
+          <% students.forEach(s => { %><option value="<%= s.id %>"><%= s.full_name %> (<%= s.group_name %>)</option><% }) %>
+        </select>
+        <select name="disciplineId" required style="flex:1;">
+          <% disciplines.forEach(d => { %><option value="<%= d.id %>"><%= d.name %></option><% }) %>
+        </select>
+        <input type="number" name="value" min="2" max="5" placeholder="Оценка" required style="width:100px;">
+        <button type="submit">Добавить</button>
+      </form>
+    </div>
+
+    <table>
+      <tr><th>Студент</th><th>Дисциплина</th><th>Оценка</th><th>Дата</th></tr>
+      <% grades.forEach(g => { %>
+        <tr><td><%= g.full_name %></td><td><%= g.discipline %></td><td><%= g.value %></td><td><%= g.date %></td></tr>
+      <% }) %>
+    </table>
+  </div>
+</body>
+</html>

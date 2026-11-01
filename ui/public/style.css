@@ -1,0 +1,28 @@
+body { font-family: 'Roboto', sans-serif; background: #F5F7FA; margin: 0; padding: 20px; color: #333; }
+.container { max-width: 800px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+h1, h2 { color: #2C5F9E; }
+input, select { padding: 8px; border: 1px solid #CBD2D9; border-radius: 4px; width: 100%; margin-bottom: 10px; box-sizing: border-box; }
+button, .btn { background: #2C5F9E; color: white; padding: 10px 15px; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; }
+button:hover { background: #1E4676; }
+.error { color: #C0392B; font-weight: bold; }
+.success { color: #27AE60; font-weight: bold; }
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #eee; }
+th { background: #E8A33D; color: white; }
+.bad { color: #C0392B; font-weight: bold; }
+.good { color: #27AE60; font-weight: bold; }
+body { font-family: 'Roboto', sans-serif; background: #F5F7FA; margin: 0; padding: 20px; color: #333; }
+.container { max-width: 1000px; margin: 0 auto; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+h1, h2, h3 { color: #2C5F9E; margin-top: 0; }
+input, select { padding: 10px; border: 1px solid #CBD2D9; border-radius: 4px; width: 100%; margin-bottom: 10px; box-sizing: border-box; font-family: inherit; }
+button, .btn { background: #2C5F9E; color: white; padding: 10px 15px; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; font-size: 14px; }
+button:hover, .btn:hover { background: #1E4676; }
+.btn-danger { background: #C0392B; }
+.btn-danger:hover { background: #922B21; }
+.card { background: #F8F9FA; padding: 15px; border-radius: 6px; border: 1px solid #E9ECEF; margin-bottom: 20px; }
+table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #E9ECEF; }
+th { background: #2C5F9E; color: white; font-weight: normal; }
+.bad { color: #C0392B; font-weight: bold; }
+.good { color: #27AE60; font-weight: bold; }
+.error { color: #C0392B; background: #FADBD8; padding: 10px; border-radius: 4px; }

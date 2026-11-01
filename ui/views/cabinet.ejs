@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Личный кабинет</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+  <div class="container">
+    <div style="display:flex; justify-content:space-between;">
+      <h2>Студент: <%= user.name %></h2>
+      <a href="/logout" class="btn btn-danger">Выйти</a>
+    </div>
+    <% if (average !== null) { %>
+      <h3>Средний балл: <span class="<%= average >= 3.5 ? 'good' : 'bad' %>"><%= average %></span></h3>
+    <% } else { %>
+      <p>Оценок пока нет.</p>
+    <% } %>
+    <table>
+      <tr><th>Дисциплина</th><th>Оценка</th><th>Дата</th></tr>
+      <% grades.forEach(g => { %>
+        <tr><td><%= g.discipline %></td><td class="<%= g.value <= 2 ? 'bad' : '' %>"><%= g.value %></td><td><%= g.date %></td></tr>
+      <% }) %>
+    </table>
+  </div>
+</body>
+</html>
